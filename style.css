@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("ProximaNova-Light.woff2") format("woff2"),
+    url("ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: white;
+  font-family: "Proxima Nova Lt", Helvetica, sans-serif;
+}
+
+.header {
+  background-color: rgb(66, 62, 62);
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  width: 100%;
+  height: 65px;
+}
+
+.logo img {
+  width: 80px;
+  height: 65px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  font-family: "Proxima Nova Lt";
+  justify-items: center;
+  width: 100%;
+  height: 65px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: justify;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  margin: 150px;
+  font-stretch: expanded;
+}
+
+.intro img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
