@@ -7,9 +7,15 @@
   font-display: swap;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: white;
   font-family: "Proxima Nova Lt", Helvetica, sans-serif;
+  height: 100%;
 }
 
 .header {
@@ -38,18 +44,65 @@ body {
   height: 65px;
 }
 
-h1 {
-  font-size: 3rem;
-  text-align: justify;
-  color: white;
-  position: absolute;
-  z-index: 1;
-  margin: 150px;
-  font-stretch: expanded;
+.intro {
+  background-image: url(img/watercolor-1636802_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
 }
 
-.intro img {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
+h1 {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  font-size: 4rem;
+  color: white;
+  font-family: "Amatic SC";
+}
+
+.main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.main > p {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(62, 61, 61);
+}
+
+.main__circles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main__circles1,
+.main__circles2,
+.main__circles3,
+.main__circles4 {
+  background-color: blue;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.main__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(188, 185, 185);
+  height: 250px;
+  justify-items: ;
+}
+
+.main__info1,
+.main__info2,
+.main__info3,
+.main__info4 {
+  width: 200px;
+  height: 150px;
+  text-align: center;
 }
