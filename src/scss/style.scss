@@ -168,20 +168,24 @@ h1 {
 .skills__boxes {
   display: flex;
   flex-direction: column;
-  
+ margin: 20px;
+ padding-bottom: 10px;
 
-  @media (min-width:1420px) {
-  padding-left: 250px;
-  padding-right: 250px;
-  padding-bottom: 50px;
+@media (min-width: 1420px) {
+    padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 50px;
   }
 }
+
 
 .skills__boxes1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   color: white;
+
+  
 }
 
 .skills__boxes2 {
@@ -303,28 +307,43 @@ h1 {
   height: auto;
 }
 
-.aboutme h2 {
-  color: rgb(0, 0, 0);
+.aboutme {
+  h2 {
+  color: black;
   text-align: center;
   font-family: "Paytone One";
   padding: 30px;
   font-size: 3rem;
+  }
+  &__more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    img {
+        width: auto;
+        height: 300px;
+        border-radius: 50%;
+      }
+    &--text {
+      width: auto;
+      height: 400px;
+      font-size: 20px;
+    }
+  }
 }
 
-.aboutme__more {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.aboutme__more img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-}
-
-.aboutme__more--text {
-  width: 800px;
-  height: 400px;
-  font-size: 20px;
+@media (max-width: 720px) {
+  .aboutme{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    &__more {
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    max-width: 500px;
+    }
+  }
 }
