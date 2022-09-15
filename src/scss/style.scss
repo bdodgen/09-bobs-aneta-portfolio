@@ -141,16 +141,24 @@ h1 {
 .skills__boxes {
   display: flex;
   flex-direction: column;
-  padding-left: 150px;
-  padding-right: 150px;
-  padding-bottom: 50px;
+ margin: 20px;
+ padding-bottom: 10px;
+
+@media (min-width: 1420px) {
+    padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 50px;
+  }
 }
+
 
 .skills__boxes1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   color: white;
+
+  
 }
 
 .skills__boxes2 {
@@ -299,36 +307,12 @@ h1 {
 }
 
 
-
 @media (max-width: 720px) {
-    .skills__boxes {
-        width: 600px;
-    
-
-    }
-}
-
-@media (max-width: 720px) {
-
-    .skills__boxes1,
-    .skills__boxes2,
-    .skills__boxes3,
-    .skills__boxes4,
-    .skills__boxes5,
-    .skills__boxes6 {
-        display: flex;
-        flex-direction: column;
-        width: 600px;
-
+    .skills__boxes div {
+        font-size: 15px;
+        background-color: rgb(66, 62, 62);
     }
 }
 
 
-@media (max-width: 720px) {
 
-    .skills__boxes1 div {
-        width: 45%;
-        height: 10px;
-
-    }
-}
