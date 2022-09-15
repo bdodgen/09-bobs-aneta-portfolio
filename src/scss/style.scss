@@ -26,6 +26,11 @@ body {
   justify-content: space-between;
   width: 100%;
   height: 65px;
+  @media (max-width:720px) {
+      flex-direction: column;
+      height: 50%;
+
+  }
 }
 
 .logo img {
@@ -37,12 +42,29 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: auto;
+  // height: auto;
   font-family: "Proxima Nova Lt";
   justify-items: center;
   width: 100%;
   height: 65px;
-}
+   @media (max-width:720px) {
+      flex-direction: column;
+      height: 100%;
+      text-align: center;
+      // background-color:white;
+      
+
+      &_text{
+        border:2px solid white;
+        background-color: rgb(66, 62, 62);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: -1%;
+        margin-bottom: -1%;
+      }
+      }
+
+  }
 
 .intro {
   background-image: url(/img/watercolor-1636802_1280.jpg);
