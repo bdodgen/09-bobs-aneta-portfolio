@@ -120,7 +120,7 @@ h1 {
 .main__info3,
 .main__info4 {
   @media (min-width:721px){
-    display: flex;
+  display: flex;
   flex-direction: column;
   text-align: center;
   width: 150px;
@@ -132,10 +132,10 @@ h1 {
   }
   
   @media (max-width:720px){
-    display: flex;
+  display: flex;
   flex-direction: column;
   text-align: center;
-  width: 150px;
+  // width: 150px;
   height: 260px;
   width: 100%;
   }
@@ -171,7 +171,7 @@ h1 {
   
 
   @media (min-width:1420px) {
-    padding-left: 250px;
+  padding-left: 250px;
   padding-right: 250px;
   padding-bottom: 50px;
   }
