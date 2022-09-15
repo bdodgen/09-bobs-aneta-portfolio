@@ -274,3 +274,14 @@ h1 {
     }
   }
 }
+
+@media (max-width: 720px) {
+  .aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    &__more {
+    flex-direction: column;
+    }
+  }
+}
